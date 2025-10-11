@@ -1,0 +1,60 @@
+@keyframes hex-lines-move {
+  0% { opacity: 0.18; }
+  50% { opacity: 0.28; }
+  100% { opacity: 0.18; }
+}
+
+.animate-hex-lines {
+  animation: hex-lines-move 8s ease-in-out infinite;
+}
+@keyframes tech-bg-move {
+  0% { filter: blur(0px) brightness(1); }
+  50% { filter: blur(2px) brightness(1.05); }
+  100% { filter: blur(0px) brightness(1); }
+}
+
+.animate-tech-bg {
+  animation: tech-bg-move 12s ease-in-out infinite;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
